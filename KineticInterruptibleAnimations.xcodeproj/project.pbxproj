@@ -11,6 +11,7 @@
 		5E24EEFE2AC35B9400800752 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E24EEFD2AC35B9400800752 /* ContentView.swift */; };
 		5E24EF002AC35B9600800752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E24EEFF2AC35B9600800752 /* Assets.xcassets */; };
 		5E24EF032AC35B9600800752 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E24EF022AC35B9600800752 /* Preview Assets.xcassets */; };
+		5E24EF0A2AC35BB000800752 /* SpringThrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E24EF092AC35BB000800752 /* SpringThrowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		5E24EEFD2AC35B9400800752 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5E24EEFF2AC35B9600800752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E24EF022AC35B9600800752 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5E24EF092AC35BB000800752 /* SpringThrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringThrowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				5E24EEFD2AC35B9400800752 /* ContentView.swift */,
 				5E24EEFF2AC35B9600800752 /* Assets.xcassets */,
 				5E24EF012AC35B9600800752 /* Preview Content */,
+				5E24EF092AC35BB000800752 /* SpringThrowView.swift */,
 			);
 			path = KineticInterruptibleAnimations;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				5E24EEFE2AC35B9400800752 /* ContentView.swift in Sources */,
 				5E24EEFC2AC35B9400800752 /* KineticInterruptibleAnimationsApp.swift in Sources */,
+				5E24EF0A2AC35BB000800752 /* SpringThrowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
