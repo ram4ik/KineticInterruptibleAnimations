@@ -10,6 +10,9 @@ import Wave
 
 struct SpringThrowView: View {
 
+    @State var offsetStart: CGSize = .zero
+    @State var isDragging = false
+    
     @State var offset: CGSize = .zero
     @State var offsetAnimator = SpringAnimator<CGSize>(spring: .defaultAnimated)
 
@@ -25,20 +28,40 @@ struct SpringThrowView: View {
                     offset = value
                 }
             }
+            .overlay {
+                Text("OFFSET: \(offset.height)")
+                    .monospaced()
+            }
     }
     
     var dragGesture: some Gesture {
         DragGesture()
             .onChanged { value in
-                offsetAnimator.target = value.translation
+                if !isDragging {
+                    isDragging = true
+                    offsetStart = offset
+                }
+                offsetAnimator.target = offsetStart + value.translation
                 offsetAnimator.mode = .nonAnimated
                 offsetAnimator.start()
             }
             .onEnded { value in
+                isDragging = false
+                offsetAnimator.velocity = value.velocity * 4
                 offsetAnimator.target = .zero
                 offsetAnimator.mode = .animated
                 offsetAnimator.start()
             }
+    }
+}
+
+extension CGSize {
+    static func * (lhs: CGSize, rhs: CGFloat) -> CGSize {
+        CGSize(width: lhs.width * rhs, height: lhs.height * rhs)
+    }
+    
+    static func + (lhs: CGSize, rhs: CGSize) -> CGSize {
+        CGSize(width: lhs.width + rhs.width, height: lhs.height + rhs.height)
     }
 }
 
