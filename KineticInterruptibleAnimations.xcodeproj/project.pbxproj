@@ -12,6 +12,7 @@
 		5E24EF002AC35B9600800752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E24EEFF2AC35B9600800752 /* Assets.xcassets */; };
 		5E24EF032AC35B9600800752 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E24EF022AC35B9600800752 /* Preview Assets.xcassets */; };
 		5E24EF0A2AC35BB000800752 /* SpringThrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E24EF092AC35BB000800752 /* SpringThrowView.swift */; };
+		5E24EF0E2AC361A400800752 /* Wave in Frameworks */ = {isa = PBXBuildFile; productRef = 5E24EF0D2AC361A400800752 /* Wave */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E24EF0E2AC361A400800752 /* Wave in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +88,9 @@
 			dependencies = (
 			);
 			name = KineticInterruptibleAnimations;
+			packageProductDependencies = (
+				5E24EF0D2AC361A400800752 /* Wave */,
+			);
 			productName = KineticInterruptibleAnimations;
 			productReference = 5E24EEF82AC35B9400800752 /* KineticInterruptibleAnimations.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 5E24EEEF2AC35B9400800752;
+			packageReferences = (
+				5E24EF0C2AC361A400800752 /* XCRemoteSwiftPackageReference "Wave" */,
+			);
 			productRefGroup = 5E24EEF92AC35B9400800752 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -348,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E24EF0C2AC361A400800752 /* XCRemoteSwiftPackageReference "Wave" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jtrivedi/Wave.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E24EF0D2AC361A400800752 /* Wave */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E24EF0C2AC361A400800752 /* XCRemoteSwiftPackageReference "Wave" */;
+			productName = Wave;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5E24EEF02AC35B9400800752 /* Project object */;
 }
